@@ -1,5 +1,5 @@
 PKG_NAME := pybtex-docutils
-URL = https://files.pythonhosted.org/packages/3e/ec/3bba74a029a032f4260dcb3ceb927da1f9dfa77bc94720d49c47ee446390/pybtex-docutils-0.2.1.tar.gz
+URL = https://files.pythonhosted.org/packages/ee/4a/b93e424f93821abf74b189b9432cb92aab6e4663405016ca5d97667f2748/pybtex-docutils-0.2.2.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
