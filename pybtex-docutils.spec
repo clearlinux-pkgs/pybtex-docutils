@@ -4,7 +4,7 @@
 #
 Name     : pybtex-docutils
 Version  : 0.2.2
-Release  : 9
+Release  : 10
 URL      : https://files.pythonhosted.org/packages/ee/4a/b93e424f93821abf74b189b9432cb92aab6e4663405016ca5d97667f2748/pybtex-docutils-0.2.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ee/4a/b93e424f93821abf74b189b9432cb92aab6e4663405016ca5d97667f2748/pybtex-docutils-0.2.2.tar.gz
 Summary  : A docutils backend for pybtex.
@@ -22,19 +22,8 @@ BuildRequires : pybtex
 BuildRequires : six
 
 %description
+A docutils backend for pybtex.
 * Download: http://pypi.python.org/pypi/pybtex-docutils/#downloads
-
-* Documentation: http://pybtex-docutils.readthedocs.org/
-
-* Development: http://github.com/mcmtroffaes/pybtex-docutils/ |imagetravis| |imagecoveralls|
-
-.. |imagetravis| image:: https://travis-ci.org/mcmtroffaes/pybtex-docutils.png?branch=develop
-       :target: https://travis-ci.org/mcmtroffaes/pybtex-docutils
-       :alt: travis-ci
-
-.. |imagecoveralls| image:: https://coveralls.io/repos/mcmtroffaes/pybtex-docutils/badge.png?branch=develop
-       :target: https://coveralls.io/r/mcmtroffaes/pybtex-docutils?branch=develop
-       :alt: coveralls.io
 
 %package license
 Summary: license components for the pybtex-docutils package.
@@ -57,7 +46,10 @@ python components for the pybtex-docutils package.
 Summary: python3 components for the pybtex-docutils package.
 Group: Default
 Requires: python3-core
-Provides: pypi(pybtex-docutils)
+Provides: pypi(pybtex_docutils)
+Requires: pypi(docutils)
+Requires: pypi(pybtex)
+Requires: pypi(six)
 
 %description python3
 python3 components for the pybtex-docutils package.
@@ -72,8 +64,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583205003
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1583539200
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
