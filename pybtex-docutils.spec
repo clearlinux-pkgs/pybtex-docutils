@@ -4,7 +4,7 @@
 #
 Name     : pybtex-docutils
 Version  : 0.2.2
-Release  : 10
+Release  : 11
 URL      : https://files.pythonhosted.org/packages/ee/4a/b93e424f93821abf74b189b9432cb92aab6e4663405016ca5d97667f2748/pybtex-docutils-0.2.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ee/4a/b93e424f93821abf74b189b9432cb92aab6e4663405016ca5d97667f2748/pybtex-docutils-0.2.2.tar.gz
 Summary  : A docutils backend for pybtex.
